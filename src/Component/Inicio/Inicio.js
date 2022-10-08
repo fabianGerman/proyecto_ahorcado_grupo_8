@@ -20,14 +20,16 @@ function Inicio() {
 
 
         <Button onClick={() => navigate("/Desarrolladores")} variant='secondary'>
+          Desarrolladores
+        </Button>
+        <br></br>
+      </div>
         Desarrollares 
         </Button>
         <br></br>
            </div>
-
     </>
-
-  );
+    );
 }
 
 export default Inicio;
