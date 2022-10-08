@@ -40,7 +40,7 @@ function Desarrolladores(){
                 </table>
             </div>
             <div>
-                <Button onClick={() => navigate("/")} size="sm">
+                <Button onClick={() => navigate("/")} size="sm" variant="secondary">
                     Regresar al Inicio
                 </Button>
             </div>
