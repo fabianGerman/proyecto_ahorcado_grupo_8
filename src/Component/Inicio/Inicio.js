@@ -24,10 +24,7 @@ function Inicio() {
         </Button>
         <br></br>
       </div>
-        Desarrollares 
-        </Button>
-        <br></br>
-           </div>
+       
     </>
     );
 }
