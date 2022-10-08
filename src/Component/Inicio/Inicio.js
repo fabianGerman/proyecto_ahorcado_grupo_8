@@ -18,20 +18,12 @@ function Inicio() {
         </Button>
         <br></br><br></br>
         <Button onClick={() => navigate("/Desarrolladores")} variant='secondary'>
-        <br></br>
-      <h1>Ahorcadito</h1>
-      <br></br>
-      <div className="text-center">
-        <Button>
-          Jugar
-        </Button>
-        <br></br><br></br>
-        <Button onClick={() => navigate("/Desarrolladores")} variant='primary'>
           Desarrolladores
         </Button>
+        <br></br>
       </div>
     </>
-
-  );
+    );
 }
+
 export default Inicio;
