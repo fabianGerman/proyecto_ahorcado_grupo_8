@@ -2,6 +2,7 @@ import './App.css';
 import Desarrolladores from './Component/Desarrolladores/Desarrolladores.js';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Inicio from './Component/Inicio/Inicio.js';
+
 function App() {
   return (
     <>

@@ -3,6 +3,7 @@ import Teams from "../Desarrolladores/TeamData.json";
 import "./Style.css";
 import { useNavigate } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
+import Img from 'react-bootstrap/image';
 
 
 function Desarrolladores(){
@@ -11,30 +12,33 @@ function Desarrolladores(){
     <div className="estilo" >
             <div>
                 <h1> LISTA DE DESARROLLADORES  </h1>
-                <table className="table">
+                <table className="table" bgcolor="#FFFF00">
                     <thead>
                         <tr>
+                            <th>IMAGEN</th>
                             <th>LU</th>
                             <th>APELLIDO</th>
                             <th>NOMBRE</th>
                             <th>GITHUB</th>
+                            <th>DESCRIPCIÓN</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {Teams.map((user, index) => {
+                        {Teams.map(user => {
                             return(
                                 <tr key={user.LU}>
-                                    <td>{user.LU}</td>
-                                    <td>{user.apellido}</td>
-                                    <td>{user.nombre}</td>
-                                    <td><a href={user.GitHub}>{user.GitHub}</a> </td>
+                                    <td class="border"><Img src={user.imagen} style={{width: '67%'}}></Img></td>
+                                    <td class="border">{user.LU}</td>
+                                    <td class="border">{user.apellido}</td>
+                                    <td class="border">{user.nombre}</td>
+                                    <td class="border"><a href={user.GitHub}>{user.GitHub}</a></td>
+                                    <td class="border">{user.descripcion}<br></br>{user.descripcion2}</td>
                                 </tr>
                             )
                         })}
                     </tbody>
                 </table>
             </div>
-            <br></br>
             <div>
                 <Button onClick={() => navigate("/")} size="sm">
                     Regresar al Inicio
