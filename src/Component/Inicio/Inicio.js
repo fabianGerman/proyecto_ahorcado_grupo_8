@@ -17,6 +17,7 @@ function Inicio() {
           Jugar
         </Button>
         <br></br><br></br>
+
         <Button onClick={() => navigate("/Desarrolladores")} variant='secondary' >
           Desarrolladores
         </Button>
