@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import Img from 'react-bootstrap/image';
 
- 
 function Desarrolladores(){
     const navigate = useNavigate();
     return(
