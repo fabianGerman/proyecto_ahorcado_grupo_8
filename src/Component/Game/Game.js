@@ -69,20 +69,20 @@ class Game extends Component {
             }));
         }
     }
-/*
+
     componentDidUpdate(){
         if(this.state.numAciertos == this.state.palabraAdivinar.length){
-          this.reinicilizar();
+          this.reiniciar();
         } 
         if(this.state.numFallos == 6){
-          this.reinicilizar();
+          this.reiniciar();
         }
     }
-*/
+
     reiniciar(){
         let palabraHaAdivinar = this.getPalabraAdivinar();
         this.setState({
-            numFallos: 0,
+            numFallos: 1,
             numAciertos: 0,
             palabraAdivinar: palabraHaAdivinar,
             palabraAdivinada: this.getPalabraAdivinada(palabraHaAdivinar),
