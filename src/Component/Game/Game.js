@@ -3,6 +3,7 @@ import Imagen from "./Imagen";
 import Palabra from "./Palabra";
 import Control from "./Control";
 import Letters from "../../LettersData.json";
+import { Alert } from "react-bootstrap";
 
 class Game extends Component {
     constructor(props) {
@@ -29,15 +30,18 @@ class Game extends Component {
         for (let i = 0; i < palabra.length; i++) {
             guiones += "-";
         }
-        console.log(guiones);
         return guiones;
     }
 
     getPalabraAdivinar() {
-        var indiceAleatorio = Math.floor(Math.random() * Letters.length);
-        var palabraSeleccionada = Letters[indiceAleatorio].letter;
-        
-        return palabraSeleccionada;
+        let b = [];
+        Letters.forEach(element => {
+            b.push(element.letter);
+        });
+        let a = "";
+        a = b[Math.floor(Math.random() * Letters.length)];
+        console.log(a);
+        return a;
     }
 
     getBotonera() {
@@ -47,9 +51,9 @@ class Game extends Component {
             "Ñ", "O", "P", "Q", "R", "S", "T",
             "U", "V", "W", "X", "Y", "Z"
         ];
-        let btns = [];
-        btns = letras.map((l) => ({ letra: l, estado: "no-pulsado" }));
-        return btns;
+        let botones = [];
+        botones = letras.map((l) => ({ letra: l, estado: "no-pulsado" }));
+        return botones;
     }
 
     sePulsoBoton(i) {
@@ -72,9 +76,12 @@ class Game extends Component {
 
     componentDidUpdate(){
         if(this.state.numAciertos == this.state.palabraAdivinar.length){
+          
+          alert("GANASTE")
           this.reiniciar();
         } 
-        if(this.state.numFallos == 6){
+        if(this.state.numFallos == 7){
+            alert("PERDISTE")
           this.reiniciar();
         }
     }
