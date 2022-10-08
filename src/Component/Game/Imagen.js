@@ -7,7 +7,7 @@ class Imagen extends Component{
     }
 
     getNombreImagen(){
-        return "img/"+this.props.numFallos+".png";
+        return "ImgAhorcado/"+this.props.numFallos+".jpg";
     }
 
     render(){

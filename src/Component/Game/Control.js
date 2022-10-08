@@ -20,7 +20,7 @@ class Control extends Component{
                     key={index}
                     disabled={boton.estado != "no-pulsado" ? true : false}
                     /**al hacer click sobre el boton llama a la funcion sePulsoBoton y le pasa por parametro el index del boton pulsado */ 
-                    onClick={() => this.props.sePulsoBoton(index)}>//
+                    onClick={() => this.props.sePulsoBoton(index)}>
                 {boton.letra}    
             </Button>
         ));

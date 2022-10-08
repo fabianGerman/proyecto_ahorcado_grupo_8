@@ -15,7 +15,7 @@ class Game extends Component {
         let palabraAdivinar = this.getPalabraAdivinar();
 
         this.state = {
-            numFallos: 0,
+            numFallos: 1,
             numAciertos: 0,
             palabraAdivinar: palabraAdivinar,
             palabraAdivinada: this.getPalabraAdivinada(palabraAdivinar),
@@ -24,17 +24,19 @@ class Game extends Component {
     }
 
     getPalabraAdivinada(palabra) {
+        
         let guiones = "";
         for (let i = 0; i < palabra.length; i++) {
             guiones += "-";
         }
+        console.log(guiones);
         return guiones;
     }
 
     getPalabraAdivinar() {
         var indiceAleatorio = Math.floor(Math.random() * Letters.length);
         var palabraSeleccionada = Letters[indiceAleatorio].letter;
-        console.log(palabraSeleccionada);
+        
         return palabraSeleccionada;
     }
 

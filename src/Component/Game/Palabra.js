@@ -5,7 +5,9 @@ class Palabra extends Component{
     constructor(props){
         super(props);
     }
+    
     render(){
+        console.log(this.props);
         return(
         <p id="palabra">{this.props.Palabra}</p> //se pasa por parametro a la palabra elegida
         )

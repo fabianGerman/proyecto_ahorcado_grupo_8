@@ -2,7 +2,7 @@ import React from "react";
 import Button from 'react-bootstrap/Button';
 import { useNavigate } from "react-router-dom";
 import Img from 'react-bootstrap/image';
-import Portada from "../ImgAhorcado/00.png";
+import Portada from "./00.png";
 
 function Inicio() {
   const navigate = useNavigate();
@@ -13,7 +13,7 @@ function Inicio() {
       <br></br>
       <br></br>
       <div className="text-center">
-        <Button variant='secondary'>
+        <Button variant='secondary' onClick={() => navigate("/game")}>
           Jugar
         </Button>
         <br></br><br></br>
