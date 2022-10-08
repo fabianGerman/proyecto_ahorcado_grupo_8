@@ -12,7 +12,9 @@ class Imagen extends Component{
 
     render(){
         return(
-            <img src={this.getNombreImagen()} alt="AHORCADO" />
+            <div className = "text-center">
+            <img src={this.getNombreImagen()} alt="AHORCADO" style={{ width: '50%' }} />
+            </div>
         );
     }
 }

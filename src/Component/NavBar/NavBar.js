@@ -8,7 +8,7 @@ function NavScrollExample() {
     return (
         <Navbar style={{backgroundColor:'green'}} expand="lg">
             <Container fluid>
-                <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+                <Navbar.Brand href="#">JUEGO DEL AHORCADO</Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
@@ -16,7 +16,7 @@ function NavScrollExample() {
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
-                        <Nav.Link href="/inicio">Inicio</Nav.Link>
+                        <Nav.Link href="/">Inicio</Nav.Link>
                         <Nav.Link href="/rankin">Rankin</Nav.Link>
                         <Nav.Link href="/desarrolladores">Desarrolladores</Nav.Link>
                         <Nav.Link href="/game">Game</Nav.Link>

@@ -15,7 +15,7 @@ function Error() {
                 <br></br>
                 <h2>La pagina solicitada no existe</h2>
                 <br></br>
-                <Button onClick={() => navigate("/")}>
+                <Button onClick={() => navigate("/")} variant = "secondary">
                     Regresar
                 </Button>
             </body>

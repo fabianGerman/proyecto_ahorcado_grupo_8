@@ -15,7 +15,7 @@ function App() {
         <Router>
           <NavBar/>
           <Routes>
-            <Route path='/inicio' element={<Inicio />}></Route>
+            <Route path='/' element={<Inicio />}></Route>
             <Route path='/rankin' element={<Rankin />}></Route>
             <Route path='/desarrolladores' element={<Desarrolladores />}></Route>
             <Route path='/game' element={<Game />}></Route>

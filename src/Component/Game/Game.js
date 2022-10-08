@@ -81,7 +81,7 @@ class Game extends Component {
           this.reiniciar();
         } 
         if(this.state.numFallos == 7){
-            alert("PERDISTE")
+          alert("PERDISTE")
           this.reiniciar();
         }
     }

@@ -8,17 +8,15 @@ function Inicio() {
   const navigate = useNavigate();
   return (
     <>
-      <br></br>
-      <Img src={Portada} style={{ width: '45%' }} />
-      <br></br>
+      <div className = "text-center">
+        <Img src={Portada} style={{ width: '55%' }} />
+      </div>
       <br></br>
       <div className="text-center">
         <Button variant='secondary' onClick={() => navigate("/game")}>
           Jugar
         </Button>
         <br></br><br></br>
-
-
         <Button onClick={() => navigate("/Desarrolladores")} variant='secondary'>
           Desarrolladores
         </Button>
