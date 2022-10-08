@@ -1,11 +1,12 @@
 import './App.css';
 import NavBar from './Component/NavBar/NavBar';
-import Rankin from './Component/Rankin/Rankin.js';
+import Rankin from './Component/Rankin/Rankin';
 import Desarrolladores from './Component/Desarrolladores/Desarrolladores.js';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Inicio from './Component/Inicio/Inicio.js';
+import Inicio from './Component/Inicio/Inicio';
 import Game from './Component/Game/Game.js';
 import Container from 'react-bootstrap/Container';
+import Error from './Component/error/Error';
 
 function App() {
   return (

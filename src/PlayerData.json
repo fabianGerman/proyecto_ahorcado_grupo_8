@@ -1,0 +1,33 @@
+[
+    {
+        "id":1,
+        "name":"jugador_1",
+        "email":"jugador_1@hotmail.com",
+        "puntaje": 0
+    },
+    {
+        "id":2,
+        "name":"jugador_2",
+        "email":"jugador_2@hotmail.com",
+        "puntaje": 0
+    },
+    {
+        "id":3,
+        "name":"jugador_3",
+        "email":"jugador_3@hotmail.com",
+        "puntaje": 0
+    },
+    {
+        "id":4,
+        "name":"jugador_4",
+        "email":"jugador_4@hotmail.com",
+        "puntaje": 0
+    },
+    {
+        "id":5,
+        "name":"jugador_5",
+        "email":"jugador_5@hotmail.com",
+        "puntaje": 0
+    }
+
+]

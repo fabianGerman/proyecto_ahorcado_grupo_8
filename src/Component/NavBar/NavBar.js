@@ -1,14 +1,10 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import MyVerticallyCenteredModal from '../Modal/ModalLogin';
 
 function NavScrollExample() {
-    const [modalShow, setModalShow] = React.useState(false);
     return (
         <Navbar style={{backgroundColor:'green'}} expand="lg">
             <Container fluid>
@@ -38,23 +34,6 @@ function NavScrollExample() {
                             Link
                         </Nav.Link>
                     </Nav>
-                    <Form className="d-flex">
-                        <Form.Control
-                            type="search"
-                            placeholder="Search"
-                            className="me-2"
-                            aria-label="Search"
-                        />
-                        <Button variant="outline-success">Search</Button>
-                        <Button variant="success" onClick={() => setModalShow(true)}>
-                            Login
-                        </Button>{' '}
-
-                        <MyVerticallyCenteredModal
-                            show={modalShow}
-                            onHide={() => setModalShow(false)}
-                        />
-                    </Form>
                 </Navbar.Collapse>
             </Container>
         </Navbar>

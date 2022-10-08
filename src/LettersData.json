@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "letter": "auto"
+    },
+    {
+        "id": 2,
+        "letter": "perro"
+    },
+    {
+        "id": 3,
+        "letter": "casa"
+    },
+    {
+        "id": 4,
+        "letter": "pelota"
+    },
+    {
+        "id": 5,
+        "letter": "taller"
+    },
+    {
+        "id": 6,
+        "letter": "hola"
+    }
+]
