@@ -9,21 +9,25 @@ function Inicio() {
   return (
     <>
       <br></br>
-      <Img src={Portada} style={{width: '45%'}}/>
+      <Img src={Portada} style={{ width: '45%' }} />
       <br></br>
       <br></br>
       <div className="text-center">
-        <Button variant = 'secondary'>
+        <Button variant='secondary'>
           Jugar
         </Button>
         <br></br><br></br>
+
+
         <Button onClick={() => navigate("/Desarrolladores")} variant='secondary'>
         Desarrollares 
         </Button>
         <br></br>
            </div>
+
     </>
 
   );
 }
+
 export default Inicio;
