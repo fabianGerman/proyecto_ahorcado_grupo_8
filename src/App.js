@@ -11,6 +11,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Inicio />}></Route>
             <Route path='/Desarrolladores' element={<Desarrolladores />} />
+            <Route path='*' element={<Error/>}></Route>
           </Routes>
         </Router>
         
