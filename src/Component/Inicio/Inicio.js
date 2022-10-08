@@ -18,11 +18,13 @@ function Inicio() {
         </Button>
         <br></br><br></br>
 
-        <Button onClick={() => navigate("/Desarrolladores")} variant='secondary' >
-          Desarrolladores
+
+        <Button onClick={() => navigate("/Desarrolladores")} variant='secondary'>
+        Desarrollares 
         </Button>
         <br></br>
-      </div>
+           </div>
+
     </>
 
   );
